@@ -39,8 +39,12 @@ namespace ProductReviewManagement
                 new ProductReview() { ProductId = 60, UserId = 25, Rating = 3, Review = "Average", isLike = true },
                 new ProductReview() { ProductId = 90, UserId = 19, Rating = 1, Review = "Good", isLike = false }
             };
-
+            //UC2
             ProductManagement.Top3Records(Product);
+
+            //UC3-Retrieve all records who's Rating is Greater that 3 and Product ID is 1 or 4 or 9
+            ProductManagement.RetriveAllRecordWhosRatingGreaterThan3(Product);
+
         }
     }
 }
