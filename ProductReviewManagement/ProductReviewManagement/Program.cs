@@ -9,7 +9,7 @@ namespace ProductReviewManagement
         {
             Console.WriteLine("Welcome to Product Review Management Problem");
 
-            //Adding default 25 values
+            //UC1-Adding default 25 values
             List<ProductReview> Product;
             Product = new List<ProductReview>
             {
@@ -39,6 +39,8 @@ namespace ProductReviewManagement
                 new ProductReview() { ProductId = 60, UserId = 25, Rating = 3, Review = "Average", isLike = true },
                 new ProductReview() { ProductId = 90, UserId = 19, Rating = 1, Review = "Good", isLike = false }
             };
+
+            ProductManagement.Top3Records(Product);
         }
     }
 }
