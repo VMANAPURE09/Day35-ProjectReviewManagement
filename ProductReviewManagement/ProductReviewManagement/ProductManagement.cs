@@ -50,5 +50,18 @@ namespace ProductReviewManagement
                                     "\nReview Count : " + pm.count);
             }
         }
+
+        //UC5-Retrieve only Product Id and Review 
+        public static void RetrieveOnlyProductIdAndReview(List<ProductReview> Product)
+        {
+            var result = (from PM in Product orderby PM.ProductId select PM).ToList();
+            Console.WriteLine("\nRetrieve only Product Id and Review :");
+            foreach (var pm in result)
+            {
+                Console.WriteLine("\nProduct ID: " + pm.ProductId +
+                                    "\nReview : " + pm.Review);
+            }
+
+        }
     }
 }

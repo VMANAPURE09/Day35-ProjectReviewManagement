@@ -48,6 +48,8 @@ namespace ProductReviewManagement
             //UC4-Retrieve count of review present for each Product ID
             ProductManagement.RetrieveCountofReviewForEachProiductId(Product);
 
+            //UC5-Retrieve only Product Id and Review
+            ProductManagement.RetrieveOnlyProductIdAndReview(Product);
 
         }
     }
